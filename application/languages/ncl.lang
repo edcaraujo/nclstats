@@ -1,0 +1,314 @@
+--
+-- Nested Context Language (NCL) definition for nclstats.
+--
+-- File: ncl.lang
+-- Date: 2012/11/09
+--
+-- More information:
+-- edcaraujo@telemidia.puc-rio.br
+--
+
+--
+-- About
+--
+
+:about:name                         = Nested Context Language
+:about:version                      = 3.0
+:about:extension                    = ncl
+
+--
+-- Elements
+--
+
+:element:area                       =
+:element:assessmentStatement        =
+:element:attributeAssessment        =
+:element:bind                       =
+:element:bindParam                  =
+:element:bindRule                   =
+:element:body                       =
+:element:causalConnector            =
+:element:compositeRule              =
+:element:compoundAction             =
+:element:compoundCondition          =
+:element:compoundStatement          =
+:element:connectorBase              =
+:element:connectorParam             =
+:element:context                    =
+:element:defaultComponent           =
+:element:defaultDescriptor          =
+:element:descriptor                 =
+:element:descriptorBase             =
+:element:descriptorParam            =
+:element:descriptorSwitch           =
+:element:head                       =
+:element:importBase                 =
+:element:importBase                 =
+:element:importNCL                  =
+:element:importedDocumentBase       =
+:element:link                       =
+:element:linkParam                  =
+:element:mapping                    =
+:element:media                      =
+:element:meta                       =
+:element:metadata                   =
+:element:metadata                   =
+:element:ncl                        =
+:element:port                       =
+:element:property                   =
+:element:region                     =
+:element:regionBase                 =
+:element:rule                       =
+:element:ruleBase                   =
+:element:simpleAction               =
+:element:simpleCondition            =
+:element:switch                     =
+:element:switchPort                 =
+:element:transition                 =
+:element:transitionBase             =
+:element:valueAssessment            =
+
+--
+-- Attributes
+--
+
+:attribute:actionType               =
+:attribute:alias                    =
+:attribute:attributeType            =
+:attribute:begin                    =
+:attribute:beginPosition            =
+:attribute:borderColor              =
+:attribute:borderWidth              =
+:attribute:bottom                   =
+:attribute:by                       =
+:attribute:clip                     =
+:attribute:comparator               =
+:attribute:component                =
+:attribute:constituent              =
+:attribute:content                  =
+:attribute:coords                   =
+:attribute:delay                    =
+:attribute:descriptor               =
+:attribute:device                   =
+:attribute:direction                =
+:attribute:documentURI              =
+:attribute:dur                      =
+:attribute:duration                 =
+:attribute:end                      =
+:attribute:endPosition              =
+:attribute:endProgress              =
+:attribute:eventType                =
+:attribute:explicitDur              =
+:attribute:fadeColor                =
+:attribute:first                    =
+:attribute:focusBorderColor         =
+:attribute:focusBorderTransparency  =
+:attribute:focusBorderWidth         =
+:attribute:focusIndex               =
+:attribute:focusSelSrc              =
+:attribute:focusSrc                 =
+:attribute:freeze                   =
+:attribute:height                   =
+:attribute:horRepeat                =
+:attribute:id                       =
+:attribute:instance                 =
+:attribute:interface                =
+:attribute:isNegated                =
+:attribute:key                      =
+:attribute:label                    =
+:attribute:last                     =
+:attribute:left                     =
+:attribute:max                      =
+:attribute:min                      =
+:attribute:moveDown                 =
+:attribute:moveLeft                 =
+:attribute:moveRight                =
+:attribute:moveUp                   =
+:attribute:name                     =
+:attribute:offset                   =
+:attribute:operator                 =
+:attribute:player                   =
+:attribute:position                 =
+:attribute:qualifier                =
+:attribute:refer                    =
+:attribute:region                   =
+:attribute:repeat                   =
+:attribute:repeatDelay              =
+:attribute:right                    =
+:attribute:role                     =
+:attribute:rule                     =
+:attribute:selBorderColor           =
+:attribute:src                      =
+:attribute:startProgress            =
+:attribute:subtype                  =
+:attribute:text                     =
+:attribute:title                    =
+:attribute:top                      =
+:attribute:transIn                  =
+:attribute:transOut                 =
+:attribute:transition               =
+:attribute:type                     =
+:attribute:value                    =
+:attribute:var                      =
+:attribute:vertRepeat               =
+:attribute:width                    =
+:attribute:xconnector               =
+:attribute:xmlns                    =
+:attribute:xmlns:xsi                =
+:attribute:xsi:schemaLocation       =
+:attribute:zIndex                   =
+
+--
+-- Relations
+--
+
+
+:relation:area:id                               = attribute
+:relation:area:begin                            = attribute
+:relation:area:first                            = attribute
+:relation:area:beginPosition                    = attribute
+:relation:area:end                              = attribute
+:relation:area:last                             = attribute
+:relation:area:endPosition                      = attribute
+:relation:area:clip                             = attribute
+:relation:area:label                            = attribute
+:relation:area:text                             = attribute
+:relation:area:coords                           = attribute
+:relation:assessmentStatement:comparator        = attribute
+:relation:attributeAssessment:role              = attribute
+:relation:attributeAssessment:attributeType     = attribute
+:relation:attributeAssessment:eventType         = attribute
+:relation:attributeAssessment:key               = attribute
+:relation:attributeAssessment:offset            = attribute
+:relation:bind:role                             = attribute
+:relation:bind:component                        = attribute
+:relation:bind:interface                        = attribute
+:relation:bind:descriptor                       = attribute
+:relation:bindParam:name                        = attribute
+:relation:bindParam:value                       = attribute
+:relation:bindRule:rule                         = attribute
+:relation:bindRule:constituent                  = attribute
+:relation:body:id                               = attribute
+:relation:causalConnector:id                    = attribute
+:relation:compositeRule:id                      = attribute
+:relation:compositeRule:operator                = attribute
+:relation:compoundAction:operator               = attribute
+:relation:compoundAction:delay                  = attribute
+:relation:compoundCondition:operator            = attribute
+:relation:compoundCondition:delay               = attribute
+:relation:compoundStatement:operator            = attribute
+:relation:compoundStatement:isNegated           = attribute
+:relation:connectorBase:id                      = attribute
+:relation:connectorParam:name                   = attribute
+:relation:connectorParam:type                   = attribute
+:relation:context:id                            = attribute
+:relation:context:refer                         = attribute
+:relation:defaultComponent:component            = attribute
+:relation:defaultDescriptor:descriptor          = attribute
+:relation:descriptor:id                         = attribute
+:relation:descriptor:region                     = attribute
+:relation:descriptor:explicitDur                = attribute
+:relation:descriptor:focusBorderColor           = attribute
+:relation:descriptor:focusBorderTransparency    = attribute
+:relation:descriptor:focusBorderWidth           = attribute
+:relation:descriptor:focusIndex                 = attribute
+:relation:descriptor:focusSelSrc                = attribute
+:relation:descriptor:focusSrc                   = attribute
+:relation:descriptor:freeze                     = attribute
+:relation:descriptor:moveDown                   = attribute
+:relation:descriptor:moveLeft                   = attribute
+:relation:descriptor:moveRight                  = attribute
+:relation:descriptor:moveUp                     = attribute
+:relation:descriptor:player                     = attribute
+:relation:descriptor:selBorderColor             = attribute
+:relation:descriptor:transIn                    = attribute
+:relation:descriptor:transOut                   = attribute
+:relation:descriptorBase:id                     = attribute
+:relation:descriptorParam:name                  = attribute
+:relation:descriptorParam:value                 = attribute
+:relation:descriptorSwitch:id                   = attribute
+:relation:importBase:alias                      = attribute
+:relation:importBase:documentURI                = attribute
+:relation:importBase:region                     = attribute
+:relation:importedDocumentBase:id               = attribute
+:relation:importNCL:alias                       = attribute
+:relation:importNCL:documentURI                 = attribute
+:relation:link:id                               = attribute
+:relation:link:xconnector                       = attribute
+:relation:linkParam:name                        = attribute
+:relation:linkParam:value                       = attribute 
+:relation:mapping:component                     = attribute
+:relation:mapping:interface                     = attribute
+:relation:media:id                              = attribute
+:relation:media:src                             = attribute 
+:relation:media:type                            = attribute
+:relation:media:descriptor                      = attribute
+:relation:media:refer                           = attribute
+:relation:media:instance                        = attribute
+:relation:meta:name                             = attribute
+:relation:meta:content                          = attribute
+:relation:ncl:id                                = attribute
+:relation:ncl:title                             = attribute
+:relation:ncl:xmlns                             = attribute
+:relation:ncl:xmlns:xsi                         = attribute
+:relation:ncl:xsi:schemaLocation                = attribute
+:relation:port:id                               = attribute
+:relation:port:component                        = attribute
+:relation:port:interface                        = attribute
+:relation:property:name                         = attribute
+:relation:property:value                        = attribute
+:relation:property:externable                   = attribute
+:relation:region:id                             = attribute
+:relation:region:title                          = attribute
+:relation:region:left                           = attribute
+:relation:region:top                            = attribute
+:relation:region:width                          = attribute
+:relation:region:height                         = attribute
+:relation:region:right                          = attribute
+:relation:region:bottom                         = attribute
+:relation:region:zIndex                         = attribute
+:relation:regionBase:id                         = attribute
+:relation:regionBase:device                     = attribute
+:relation:regionBase:region                     = attribute
+:relation:rule:id                               = attribute
+:relation:rule:var                              = attribute
+:relation:rule:comparator                       = attribute
+:relation:rule:value                            = attribute
+:relation:ruleBase:id                           = attribute
+:relation:simpleAction:role                     = attribute
+:relation:simpleAction:eventType                = attribute
+:relation:simpleAction:actionType               = attribute
+:relation:simpleAction:value                    = attribute
+:relation:simpleAction:by                       = attribute
+:relation:simpleAction:duration                 = attribute
+:relation:simpleAction:delay                    = attribute
+:relation:simpleAction:repeat                   = attribute
+:relation:simpleAction:repeatDelay              = attribute
+:relation:simpleAction:max                      = attribute
+:relation:simpleAction:min                      = attribute
+:relation:simpleAction:qualifier                = attribute
+:relation:simpleCondition:role                  = attribute
+:relation:simpleCondition:eventType             = attribute
+:relation:simpleCondition:transition            = attribute
+:relation:simpleCondition:key                   = attribute
+:relation:simpleCondition:delay                 = attribute
+:relation:simpleCondition:max                   = attribute
+:relation:simpleCondition:min                   = attribute
+:relation:simpleCondition:qualifier             = attribute
+:relation:switch:id                             = attribute
+:relation:switch:refer                          = attribute
+:relation:switchPort:id                         = attribute
+:relation:transition:id                         = attribute
+:relation:transition:type                       = attribute
+:relation:transition:subtype                    = attribute
+:relation:transition:direction                  = attribute
+:relation:transition:startProgress              = attribute
+:relation:transition:endProgress                = attribute
+:relation:transition:dur                        = attribute
+:relation:transition:horRepeat                  = attribute
+:relation:transition:vertRepeat                 = attribute
+:relation:transition:borderWidth                = attribute
+:relation:transition:borderColor                = attribute
+:relation:transition:fadeColor                  = attribute
+:relation:transitionBase:id                     = attribute
+:relation:valueAssessment:value                 = attribute

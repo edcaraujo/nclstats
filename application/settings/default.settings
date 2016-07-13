@@ -1,0 +1,25 @@
+--
+-- Default settings for nclstats.
+--
+-- File: default.settings
+-- Date: 2012/11/09
+--
+-- More information:
+-- edcaraujo@telemidia.puc-rio.br
+--
+
+--
+-- About
+--
+
+:about:title                         = nclstats 
+:about:subtitle                      = An authoring statistics system for NCL
+:about:description                   = 
+:about:site                          = http://www.telemidia.puc-rio.br/~edcaraujo/nclstats/
+
+--
+-- System
+--
+
+:system:output                       = . 
+
